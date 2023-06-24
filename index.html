@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--File: index.html
+ Assignment: Dynamic Interactive Table
+ Bikash Shrestha, UMass Lowell Computer Science, Bikash_Shrestha@student.uml.edu
+ Copyright (c) 2023 by Bikash Shrestha. All rights reserved. May be
+ freely copied or excerpted for educational purposes with credit to the
+ author.
+ Updated by BS on June 23, 2023, at 7:30 PM.
+ Instructor: Professor Wenjin Zhou
+ Help: w3 Schools/ Stack Overflow / jQuery / Google 
+ Basic Description: This is the part one of fourth assignment where we use jQuery in addition to HTML and CSS to create the interactive multiplication table. -->
+
+ <html lang ="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dynamic Multiplication Table</title>
+
+    <!-- CSS stylesheet-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body id="body">
+    <div id="header" class="container-fluid">
+      <h2>MULTIPLICATION TABLE</h2>
+    </div>
+
+    <!-- Main Content -->
+    <div id="maindiv" class="container">
+      <div id="row1" class="row">      
+        <div id = "colform" class="col-md-3">
+          <!-- Form for input-->
+          <form id = "form">
+            <label>Minimum Column Value:</label><br>
+            <input name = "minc" id="minc" type="text" placeholder="Enter a number"/><br>
+            <label>Maximum Column Value:</label><br>
+            <input name="maxc" id="maxc" type="text" placeholder="Enter a number"/><br>
+            <label>Minimum Row Value:</label><br>
+            <input name="minr" id="minr" type="text" placeholder="Enter a number"/><br>
+            <label>Maximum Row Value:</label><br>
+            <input name="maxr" id="maxr" type="text" placeholder="Enter a number"/><br><br>
+
+            <!-- Submit button -->
+            <button name="submit" id = "submit" type="submit">Submit</button>
+          </form>
+        </div>        
+        <div id = "coltable" class="col-md-9">
+          <!-- Table -->
+          <table id="table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>2</th>
+                <th>3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>4</th>
+                <th>8</th>
+                <th>12</th>
+              </tr>
+              <tr>
+                <th>5</th>
+                <th>10</th>
+                <th>15</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>      
+    </div>   
+    
+    <!-- iQuery Validate plugin -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
